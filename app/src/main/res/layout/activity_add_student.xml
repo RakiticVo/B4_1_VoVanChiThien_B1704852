@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".AddStudent">
+
+    <TextView
+        android:id="@+id/title_template"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hãy nhập vào thông tin để thêm một sinh viên"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:textColor="#2196F3"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:id="@+id/edt_mssv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:hint="Nhập vào mã số sinh viên"
+        android:textColorHint="#AFA8A8"
+        android:textColor="@color/black"
+        android:layout_margin="5dp"
+        android:layout_below="@id/title_template"/>
+    <EditText
+        android:id="@+id/edt_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:hint="Nhập vào tên sinh viên"
+        android:textColorHint="#AFA8A8"
+        android:textColor="@color/black"
+        android:layout_margin="5dp"
+        android:layout_below="@id/edt_mssv"/>
+    <EditText
+        android:id="@+id/edt_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:hint="Nhập vào email sinh viên"
+        android:textColorHint="#AFA8A8"
+        android:textColor="@color/black"
+        android:layout_margin="5dp"
+        android:layout_below="@id/edt_name"/>
+    <EditText
+        android:id="@+id/edt_sdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:hint="Nhập vào số điện thoại sinh viên"
+        android:inputType="phone"
+        android:textColorHint="#AFA8A8"
+        android:textColor="@color/black"
+        android:layout_margin="5dp"
+        android:layout_below="@id/edt_email"/>
+
+    <Button
+        android:id="@+id/btn_return_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TRỞ VỀ"
+        android:backgroundTint="#AFA8A8"
+        android:textColor="@color/black"
+        android:layout_margin="5dp"
+        android:layout_below="@id/edt_sdt"/>
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="THÊM"
+        android:backgroundTint="#AFA8A8"
+        android:layout_margin="5dp"
+        android:textColor="@color/black"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/edt_sdt"/>
+
+    <TextView
+        android:id="@+id/tag_sv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sinh viên đã được thêm vào:"
+        android:textSize="24sp"
+        android:textColor="#2196F3"
+        android:layout_below="@id/btn_add"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/sv_added"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:layout_below="@id/tag_sv"
+        android:gravity="center"/>
+
+</RelativeLayout>

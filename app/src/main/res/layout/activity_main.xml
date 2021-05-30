@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:text="CSDL QUẢN LÝ SINH VIÊN DÙNG SQLITE"
+        android:textSize="21sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:padding="10dp"
+        android:background="#F13B3B"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_sv"
+        android:text="THÊM SINH VIÊN"
+        android:textSize="21sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:padding="10dp"
+        android:backgroundTint="#8BC34A"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/show_all_sv"
+        android:text="XEM TẤT CẢ SINH VIÊN"
+        android:textSize="21sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:padding="10dp"
+        android:backgroundTint="#FFEB3B"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/show_sv"
+        android:text="XEM MỘT SINH VIÊN"
+        android:textSize="21sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:padding="10dp"
+        android:backgroundTint="#FF9800"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_sv"
+        android:text="SỬA MỘT SINH VIÊN"
+        android:textSize="21sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:padding="10dp"
+        android:backgroundTint="#B296E4"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/delete_sv"
+        android:text="XÓA MỘT SINH VIÊN"
+        android:textSize="21sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:padding="10dp"
+        android:backgroundTint="#ED7DEC"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/return_home"
+        android:text="TRỞ VỀ MÀN HÌNH CHÍNH"
+        android:textSize="21sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:padding="10dp"
+        android:backgroundTint="#2196F3"/>
+
+    <FrameLayout
+        android:id="@+id/frame_sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img_show"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/dhcantho"/>
+
+        <ListView
+            android:id="@+id/list_sv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </ListView>
+
+    </FrameLayout>
+
+</LinearLayout>
